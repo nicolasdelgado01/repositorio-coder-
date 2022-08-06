@@ -118,8 +118,8 @@ h2{
     font-weight: 'Thin 100';
 }
 .categorias div a div img{
-    height: auto;
-    max-width: 100%;
+    height: 55rem;
+    max-width: 55rem;
 }
 .categorias__seccion a h3{
     border:0.3rem inset rgb(228, 88, 38);
@@ -285,6 +285,7 @@ footer a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .pie__pagina{
     display: flex;
@@ -365,6 +366,6 @@ footer a{
     }
     .categorias div a div img{
         height: auto;
-        max-width: 100%;
+        max-width: 80%;
     }
 }
