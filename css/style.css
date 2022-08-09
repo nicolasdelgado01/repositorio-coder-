@@ -11,10 +11,10 @@ a{
 .header{
     background-color: rgb(27, 26, 23);
 }
-header nav div{
+/* header nav div{
     display: inline-block;
     font-size: 2rem;
-}
+} */
 .header__nombre{
     color: rgb(240, 165, 0);
     font-size: 4rem;
@@ -55,9 +55,9 @@ header nav div{
     font-family: 'lato', sans-serif;
     font-weight: 'Thin 100';
 }
-ul {
+/* ul {
     list-style: none;
-    font-size:0 /* truco por el uso de inline-block*/
+    font-size:0 
  }
 li {
     display: inline-block;
@@ -77,18 +77,18 @@ ul ul {
 }
 ul ul li {
     display: block;
-}
+} */
 ul li:hover ul {
     display:block;
 }
 header nav ul li {
     border:0.3rem inset rgb(228, 88, 38);
-    text-align: center;
-    font-size: 2rem;
+    text-align: center; 
+    font-size: 2rem; 
     background-color: rgb(240, 165, 0);
-    margin: 0.5rem;
-    font-family: 'lato', sans-serif;
-    font-weight: 'Thin 100';
+    margin: 2rem;
+    /* font-family: 'lato', sans-serif;
+    font-weight: 'Thin 100'; */
 }
 
 h2{
@@ -307,6 +307,11 @@ footer a{
     height: auto;
     max-width: 20%;
 }
+/*----bootstrap-----*/
+.nav2 , .container-fluid{
+    background-color: rgb(27, 26, 23);
+}
+
 /*----efectos----*/
 .contenedor:hover{
     transform: scale(1.2);
@@ -314,17 +319,18 @@ footer a{
 }
 
 
+
 /* ------mobile------ */
 
 @media screen and (max-width: 768px){
-    #grilla{
+/*     #grilla{
     grid-template-areas: 
         "nombre ingresar"
         "nav nav";
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: space-evenly;
-    }
+    } */
    .header__nombre{
         grid-area: nombre;
     }
