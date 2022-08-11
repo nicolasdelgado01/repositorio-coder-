@@ -9,12 +9,16 @@ a{
     text-decoration: none;
 }
 .header{
-    background-color: rgb(27, 26, 23);
+    background: rgb(27,26,23);
+    background: linear-gradient(180deg, rgba(27,26,23,1) 97%, rgba(255,255,255,1) 100%);
 }
-/* header nav div{
-    display: inline-block;
-    font-size: 2rem;
-} */
+.cambio:hover{
+    background-color: rgb(230, 213, 184);
+}
+.header__ingresar a:hover{
+    background-color: rgb(230, 213, 184);
+}
+
 .header__nombre{
     color: rgb(240, 165, 0);
     font-size: 4rem;
@@ -55,29 +59,6 @@ a{
     font-family: 'lato', sans-serif;
     font-weight: 'Thin 100';
 }
-/* ul {
-    list-style: none;
-    font-size:0 
- }
-li {
-    display: inline-block;
-    width: 12%;
-    position:relative;
-    font-size: 14px;
-    font-family: 'lato', sans-serif;
-    font-weight: 'Thin 100';
- }
-ul ul {
-    position: absolute ;
-    display: none;
-    font-family: 'lato', sans-serif;
-    font-weight: 'Thin 100';
-    z-index: 2;
-    
-}
-ul ul li {
-    display: block;
-} */
 ul li:hover ul {
     display:block;
 }
@@ -87,8 +68,6 @@ header nav ul li {
     font-size: 2rem; 
     background-color: rgb(240, 165, 0);
     margin: 2rem;
-    /* font-family: 'lato', sans-serif;
-    font-weight: 'Thin 100'; */
 }
 
 h2{
@@ -110,6 +89,7 @@ h2{
     font-family: 'lato', sans-serif;
     font-weight: 'Thin 100';
 }
+
 .categorias a div h3{
     border: 0.3rem inset rgb(228, 88, 38);
     font-size: 2rem; 
@@ -131,7 +111,8 @@ h2{
     font-weight: 'black 900'
 }
 footer {
-    background-color: rgb(228, 88, 38);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(228,88,38,1) 14%);
 
 }
 
@@ -143,26 +124,7 @@ footer a{
     font-family: 'lato', sans-serif;
     font-weight: 'Thin 100';
 }
-.header__modelo {
-    display: inline-block;
-    border:0.3rem inset rgb(228, 88, 38);
-    font-size: 2rem;
-    background-color: rgb(240, 165, 0);
-    padding: 0.5rem;
-    font-family: 'Thin 100', sans-serif;
-    font-weight: 'black 900';
-    margin: 0.5rem;
-}
-.header__version li {
-    border:0.3rem inset rgb(228, 88, 38);
-    font-size: 1.5rem;
-    background-color: rgb(240, 165, 0);
-    margin: 0.5rem;
-    font-family: 'lato', sans-serif;
-    font-weight: 'Thin 100';
-    width: 9rem;
-    padding: 0.5rem;
-}
+
 .modelo__lista li{
     display: inline-block;
     border:0.3rem inset rgb(228, 88, 38);
@@ -250,6 +212,15 @@ footer a{
     width: 10rem;
     padding: 0.5rem;
 }
+.botton{
+    border:0.3rem inset rgb(228, 88, 38);
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(240, 165, 0);
+    width: 10rem;
+    padding: 0.5rem;
+
+}
 #grilla{
     display: grid;
     grid-template-areas:
@@ -317,20 +288,14 @@ footer a{
     transform: scale(1.2);
     transition: 1s;
 }
-
+.a:hover{
+    background-color: aliceblue;
+}
 
 
 /* ------mobile------ */
 
 @media screen and (max-width: 768px){
-/*     #grilla{
-    grid-template-areas: 
-        "nombre ingresar"
-        "nav nav";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-evenly;
-    } */
    .header__nombre{
         grid-area: nombre;
     }

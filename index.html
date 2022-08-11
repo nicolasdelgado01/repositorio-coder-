@@ -11,12 +11,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>NDMotorsSports</title>
 </head>
 <body>
     <header class="header" id="grilla">
-        <a href="index.html"><h1 class="header__nombre" id="nombre">ND Motors Sports</h1></a>
-        <a href="index.html"><img class="header__logo" id="logo" src="./fotos pagina coder/logo2.png" alt=""></a>
+        <a href="index.html" class="animate__animated animate__backInLeft"><h1 class="header__nombre" id="nombre">ND Motors Sports</h1></a>
+        <a href="index.html" class="animate__animated animate__backInDown">
+          <img class="header__logo" id="logo" src="./fotos pagina coder/logo2.png" alt="">
+        </a>
         <div class="header__ingresar" >
             <img src="./fotos pagina coder/fotoperfil.png" width="50" height="50"alt="">
             <a href="./secciones/ingresar.html">ingresar</a>
@@ -29,48 +34,26 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
+                  <li class="nav-item cambio">
                     <a class="nav-link active" aria-current="page" href="./secciones/contacto.html">contacto</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle cambio" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       marcas
                     </a>
                     <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="./marcas/audi.html">Audi</a></li>
-                      <li><a class="dropdown-item" href="./marcas/bmw.html">BMW</a></li>
-                      <li><a class="dropdown-item" href="./marcas/porsche.html">Porsche</a></li>
-                      <li><a class="dropdown-item" href="./marcas/mercedesbenz.html">Mercedes-Benz</a></li>
-                      <li><a class="dropdown-item" href="./marcas/volkswagen.html">Volkswagen</a></li>
+                      <li><a class="dropdown-item cambio" href="./marcas/audi.html">Audi</a></li>
                     </ul>
                   </li>
                 </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button class="botton cambio" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
           </nav>
         </div>
-        <!-- <nav class="header__nav">
-            <div class="header__busqueda" id="searchform">
-                <input type="text" id="searchterm" placeholder="Buscar piezas" />
-                <button  type="button" id="search">Buscar</button>
-            </div>
-            <ul class="header__lista">
-                <li>marca
-                    <ul class="header__marcas">
-                        <li><a href="./marcas/audi.html">Audi</a></li>
-                        <li><a href="./marcas/bmw.html">BMW</a></li>
-                        <li><a href="./marcas/porsche.html">Porsche</a></li>
-                        <li><a href="./marcas/mercedesbenz.html">Mercedes-Benz</a></li>
-                        <li><a href="./marcas/volkswagen.html">Volkswagen</a></li>
-                    </ul>
-                </li>
-                <li class="header__contacto"><a href="./secciones/contacto.html">contacto</a> </li>
-            </ul>
-        </nav> -->
     </header>
     <section class="categorias" >
         <h2>Categorias</h2>
@@ -78,29 +61,29 @@
             <a href="./motor/motorgeneral.html">
                 <div class="contenedor" id="motor">
                     <img src="./fotos pagina coder/imagenMotor.jpg" alt="motor V10 de m5">
-                    <h3 class="contenedor__texto" >Motor</h3>
+                    <h3 class="contenedor__texto cambio" >Motor</h3>
                 </div>
             </a>
             <a href="./suspension/suspensiongeneral.html">
                 <div class="contenedor" id="suspension">
                     <img src="./fotos pagina coder/imagen Suspension01.png" alt="coilovers delantero y trasero">
-                    <h3 class="contenedor__texto" >Suspension</h3>
+                    <h3 class="contenedor__texto cambio" >Suspension</h3>
                 </div>
             </a>
             <a href="./frenos/frenogeneral.html">
                 <div class="contenedor" id="frenos">
                     <img src="./fotos pagina coder/imagenFreno01.jpg" alt="Conjunto de freno de porsche">
-                    <h3 class="contenedor__texto" >Frenos</h3>
+                    <h3 class="contenedor__texto cambio" >Frenos</h3>
                 </div>
             </a>
         </div>
         <div  class="categorias__seccion"  >
-            <a href="./secciones/nuevoslanzamientos.html"><h3>Nuevos Lanzamientos</h3></a>
-            <a href="./secciones/ofertas.html"><h3>Ofertas</h3></a>
+            <a   href="./secciones/nuevoslanzamientos.html"><h3 class="cambio">Nuevos Lanzamientos</h3></a>
+            <a  href="./secciones/ofertas.html"><h3 class="cambio">Ofertas</h3></a>
         </div>
     </section>
     <footer class="pie__pagina">
-        <a href="">Medios De Pago</a>
+        <a class="cambio" href="">Medios De Pago</a>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.0703073063!2d-57.98818963340461!3d-34.92045289932747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656708947524!5m2!1ses-419!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
