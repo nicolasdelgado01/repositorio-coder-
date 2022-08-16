@@ -1,0 +1,10 @@
+.cambio:hover{
+    background-color:nth($colores,4);
+}
+.header__ingresar a:hover{
+    background-color: rgb(230, 213, 184);
+}
+.contenedor:hover{
+    transform: scale(1.2);
+    transition: $tiempo;
+}

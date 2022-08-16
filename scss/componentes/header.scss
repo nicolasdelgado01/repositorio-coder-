@@ -1,0 +1,30 @@
+.header{
+    nav{
+
+        ul{
+        
+            li{
+                border:map-get($size , borde ) inset nth($colores,3 );
+                text-align: center; 
+                font-size: map-get($size , fuentetam);
+                background-color: nth($colores,2 );
+                margin: map-get($size , tamMargen );
+            }
+        }
+    }        
+    background: nth($colores, 1);
+    background: linear-gradient(180deg, nth($colores, 1) 97%, nth($colores, 5) 100%) 
+}
+    .header__logo{
+    width: 65%;
+    height: 70%;
+}.header__ingresar a{
+    border:map-get($size , borde ) inset nth($colores,3 );
+    text-align: center;
+    font-size: map-get($size , fuentetam);
+    background-color: nth($colores,2 );
+    padding: 0.5rem;
+    font-family: 'Thin 100', sans-serif;
+    font-weight: 'black 900';
+    margin: map-get($size , tamMargen );
+}
