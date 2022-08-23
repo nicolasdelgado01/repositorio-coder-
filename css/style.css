@@ -271,14 +271,23 @@ h2 {
   justify-content: center;
 }
 
+.datoIngreso {
+  margin: 1rem;
+}
+
 @media screen and (max-width: 991px) {
   #grilla {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
   .producto img {
     width: auto;
+  }
+  .grilladentro {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
 @media screen and (max-width: 768px) {

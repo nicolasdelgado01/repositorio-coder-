@@ -72,3 +72,6 @@
     display: flex;
     justify-content: center;
 }
+.datoIngreso{
+    margin: map-get($size , tamMargen );
+}
