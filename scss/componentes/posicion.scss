@@ -1,0 +1,74 @@
+#grilla{
+    display: grid;
+    grid-template-areas:
+        "logo grilla";     
+    grid-template-columns: 1fr 1fr;
+}
+.grilladentro{
+    grid-area: grilla;
+}
+.header__logo {
+    grid-area: logo;
+ }
+.header__nombre {
+    grid-area: nombre;
+ }
+.header__ingresar {
+    grid-area: ingresar; 
+    justify-self:end;  
+    align-self:flex-start;   
+ }
+.header__nav {
+    grid-area: nav; 
+    align-self: end;     
+ }
+.header nav {
+    display: flex;
+    justify-self: end;
+    align-items: end;
+}
+.header__ingresar{
+    display: flex;
+    
+}
+.grilladentro{
+    display: grid;
+    grid-template-areas: 
+    "ingresar"
+    "nav";
+    grid-template-rows: 1fr 1fr;
+} 
+.grilla2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pie__pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.modelo__lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#grilla1b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__logo2{
+    height: auto;
+    max-width: 20%;
+}
+/*----bootstrap-----*/
+.nav2 , .container-fluid{
+    background-color: nth($colores, 1);
+}
+.carrusel{
+    display: flex;
+    justify-content: center;
+}

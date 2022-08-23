@@ -1,12 +1,36 @@
+.seccion_suspension, .seccions_motores, .seccion__frenos {
+  text-align: center;
+  font-size: 5rem;
+  margin: 0.5rem;
+  font-family: "lato", sans-serif;
+  font-weight: "Thin 100";
+  padding: 0.5rem;
+}
+
+.categorias a div h3, .botton, .datos__ingreso button, .header__lista li, .header__ingresar a, .header nav ul li {
+  border: 0.3rem inset rgb(228, 88, 38);
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgb(240, 165, 0);
+  font-family: "lato", sans-serif;
+  font-weight: "Thin 100";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .header {
+  width: auto;
   background: rgb(27, 26, 23);
   background: linear-gradient(180deg, rgb(27, 26, 23) 97%, rgb(255, 255, 255) 100%);
 }
 .header nav ul li {
-  border: 0.3rem inset rgb(228, 88, 38);
-  text-align: center;
-  font-size: 2rem;
-  background-color: rgb(240, 165, 0);
   margin: 1rem;
 }
 
@@ -16,14 +40,18 @@
 }
 
 .header__ingresar a {
-  border: 0.3rem inset rgb(228, 88, 38);
-  text-align: center;
-  font-size: 2rem;
-  background-color: rgb(240, 165, 0);
-  padding: 0.5rem;
-  font-family: "Thin 100", sans-serif;
-  font-weight: "black 900";
   margin: 1rem;
+  padding: 0.5rem;
+}
+
+.perfil {
+  width: 50px;
+  height: 50px;
+  padding: 0.1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 footer {
@@ -50,6 +78,237 @@ footer a {
 .contenedor:hover {
   transform: scale(1.2);
   transition: 1s;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+.header__lista li {
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+.datos__ingreso button {
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+.botton {
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+.volver a {
+  color: rgb(27, 26, 23);
+  font-size: 2rem;
+  font-family: "lato", sans-serif;
+  font-weight: "Thin 100";
+  padding: 0.5rem;
+}
+
+.categorias__seccion a h3 {
+  border: 0.3rem inset rgb(228, 88, 38);
+  text-align: center;
+  font-size: 2rem;
+  background-color: rgb(240, 165, 0);
+  display: inline-blocks;
+  font-family: "Thin 100", sans-serif;
+  font-weight: "black 900";
+}
+
+.categorias a div h3 {
+  width: 10rem;
+}
+
+.categorias div a div img {
+  height: 55rem;
+  max-width: 55rem;
+}
+
+h2 {
+  color: rgb(228, 88, 38);
+  font-size: 3rem;
+  margin: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: " Regular 400";
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.contenedor__texto {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  font-family: "lato", sans-serif;
+  font-weight: "Thin 100";
+}
+
+.stock {
+  text-align: center;
+  font-size: 5rem;
+  margin: 0.5rem;
+  font-family: "lato", sans-serif;
+  font-weight: "Thin 100";
+  padding: 0.5rem;
+}
+
+.producto img {
+  width: 20%;
+}
+
+.datos__ingreso {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.datos__ingreso input {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.5rem;
+  font-family: "lato", sans-serif;
+  font-weight: "Thin 100";
+  padding: 0.5rem;
+}
+
+.mensaje {
+  width: 60%;
+  height: 30rem;
+}
+
+.datoIngreso {
+  margin: 1rem;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas: "logo grilla";
+  grid-template-columns: 1fr 1fr;
+}
+
+.grilladentro {
+  grid-area: grilla;
+}
+
+.header__logo {
+  grid-area: logo;
+}
+
+.header__nombre {
+  grid-area: nombre;
+}
+
+.header__ingresar {
+  grid-area: ingresar;
+  justify-self: end;
+  align-self: flex-start;
+}
+
+.header__nav {
+  grid-area: nav;
+  align-self: end;
+}
+
+.header nav {
+  display: flex;
+  justify-self: end;
+  align-items: end;
+}
+
+.header__ingresar {
+  display: flex;
+}
+
+.grilladentro {
+  display: grid;
+  grid-template-areas: "ingresar" "nav";
+  grid-template-rows: 1fr 1fr;
+}
+
+.grilla2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pie__pagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modelo__lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#grilla1b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__logo2 {
+  height: auto;
+  max-width: 20%;
+}
+
+/*----bootstrap-----*/
+.nav2, .container-fluid {
+  background-color: rgb(27, 26, 23);
+}
+
+.carrusel {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+  #grilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto img {
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header2 {
+    width: 120rem;
+  }
+  .grilla2 {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .grilla2 a div img {
+    height: auto;
+    max-width: 100%;
+  }
+  .pie__pagina {
+    flex-direction: column;
+  }
+  .modelo__lista {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .datos__ingreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .categorias div a div img {
+    height: auto;
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

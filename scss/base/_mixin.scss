@@ -1,0 +1,16 @@
+@mixin volver{
+    color:  nth($colores, 1);
+    font-size: map-get($size , fuentetam);  
+    font-family: 'lato', sans-serif;
+    font-weight: 'Thin 100';
+    padding: 0.5rem;
+}
+@mixin seccionVenta{
+    border:map-get($size , borde ) inset nth($colores, 3);
+    text-align: center;
+    font-size: map-get($size , fuentetam); 
+    background-color: nth($colores, 2);
+    display: inline-blocks;
+    font-family: 'Thin 100', sans-serif;
+    font-weight: 'black 900';
+}

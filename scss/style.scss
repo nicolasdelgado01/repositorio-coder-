@@ -1,9 +1,14 @@
 @import './base/listas';
 @import './base/maps';
 @import './base/variables';
-
+@import './base/extend';
+@import './base/mixin';
 
 
 @import './componentes/header.scss';
 @import './componentes/footer.scss';
 @import './componentes/animaciones.scss';
+@import './componentes/secciones.scss';
+@import './componentes/posicion.scss';
+
+@import './componentes/mediaquery.scss';

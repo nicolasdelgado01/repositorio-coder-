@@ -1,0 +1,17 @@
+%botonesCategoria{
+    text-align: center;
+    font-size: 5rem;
+    margin: 0.5rem;
+    font-family: 'lato', sans-serif;
+    font-weight: 'Thin 100';
+    padding: 0.5rem;
+}
+%botones{
+    border:map-get($size , borde ) inset nth($colores, 3);
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: nth($colores, 2);
+    font-family: 'lato', sans-serif;
+    font-weight: 'Thin 100';
+}
+
