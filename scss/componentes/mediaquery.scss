@@ -4,9 +4,6 @@
       flex-direction: column;
       align-items: start;
     }
-    .producto img{
-        width: auto;
-    }
     .grilladentro{
         display: flex;
         flex-direction: column;
@@ -30,6 +27,19 @@
     }
     .guiafoto{
         height: 15%;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .producto{
+        padding: 5rem;
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 768px){
