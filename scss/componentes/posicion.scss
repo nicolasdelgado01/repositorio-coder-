@@ -68,10 +68,44 @@
 .nav2 , .container-fluid{
     background-color: nth($colores, 1);
 }
-.carrusel{
-    display: flex;
-    justify-content: center;
+.inicio{
+    display: grid;
+    grid-template-areas:
+        "none carrusel guia";     
+    grid-template-columns: 0.2fr 2.5fr 1fr;
 }
+.carrusel{
+    grid-area: carrusel;
+    padding: 2rem;
+}
+.guiausuario{
+    grid-area: guia;
+    display: flex;
+    align-items:flex-start;
+    padding: 2rem;
+}
+.guiafoto{
+    height: 15%;
+}
+
 .datoIngreso{
     margin: map-get($size , tamMargen );
+}
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.producto{
+    padding: 5rem;
+    width: 30rem;
+    
+}
+.card{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items:top;
 }

@@ -4,9 +4,11 @@
 .header__ingresar a:hover{
     background-color: rgb(230, 213, 184);
 }
-.contenedor:hover{
-    transform: scale(1.2);
-    transition: $tiempo;
+@media screen and (min-width: 991px){
+    .contenedor:hover{
+        transform: scale(1.2);
+        transition: $tiempo;
+    }
 }
 ul {
     li:hover ul {

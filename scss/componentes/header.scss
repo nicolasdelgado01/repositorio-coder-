@@ -37,3 +37,6 @@ html{
 a{
     text-decoration: none;  
 }
+.navbar-toggler{
+    background-color: nth($colores, 2);
+}
